@@ -7,3 +7,5 @@ src.egg-info/
 #ignore .venv
 .venv/
 
+#ignore tutorials
+tutorials/
