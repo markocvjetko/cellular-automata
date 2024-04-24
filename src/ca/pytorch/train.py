@@ -1,5 +1,5 @@
-import src.game_of_life.pytorch.models as models
-import src.game_of_life.pytorch.data as data
+from src.ca.pytorch import models
+from src.ca.pytorch import data
 import torch.nn as nn
 import torch
 
@@ -15,7 +15,9 @@ if __name__ == "__main__":
 
     dataset = data.GameOfLifeDataset((20, 20), p=0.4, n_samples=1000)
 
-    model = models.GameOfLifeModel()
+    model = models.GameOfLifeModel2()
+    #print num params
+    print('num net params:', sum(p.numel() for p in model.parameters()))
     model.train()
     model.cuda()
     loss_fn = nn.BCELoss()

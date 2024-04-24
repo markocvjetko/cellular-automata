@@ -1,6 +1,6 @@
 import numpy as np
 from torch.utils.data import Dataset
-import src.game_of_life.game_of_life as gol
+import src.ca.numpy.game_of_life as gol
 
 class GameOfLifeDataset(Dataset):
     '''
@@ -21,4 +21,3 @@ class GameOfLifeDataset(Dataset):
         self.game.set_board(board_state)
         self.game.step()
         return np.array(board_state, dtype=np.float32), np.array(self.game.get_board(), dtype=np.float32)
-

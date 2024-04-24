@@ -9,3 +9,6 @@ src.egg-info/
 
 #ignore tutorials
 tutorials/
+
+#ignore src/ca/jax/MNIST
+src/ca/jax/MNIST/

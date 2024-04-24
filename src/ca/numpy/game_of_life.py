@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-import src.util.path_config as path_config
+
 
 class GameOfLife():
     '''
