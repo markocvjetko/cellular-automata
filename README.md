@@ -1,5 +1,9 @@
 # cellular-automata
 
+
+* ![Glider Gun in Conway's Game of Life](glidergun.jpeg) * ![Orb cellular automata pattern](orbium.jpeg)
+
+
 A self-learning project combining my interests in machine learning and cellular automata, with the desire to learn JAX.
 
 The repository contains JAX from scratch implementations of Conway's Game of Life and it's continuous extension, Lenia (src/ca/jax/)
